@@ -1,5 +1,11 @@
 {
   "name": "RecycleMate",
   "integrations": {},
-  "type": "angular"
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/recollect/api",
+      "proxyUrl": "https://api.recollect.net/api/areas"
+    }
+  ]
 }

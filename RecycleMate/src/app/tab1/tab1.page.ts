@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  urlBase = 'https://api.recollect.net/api/areas/Regina/services/waste/pages/en/209255.json';
+  urlBase = 'api/recollect/Regina/services/waste/pages/en/209255.json';
   headers = new HttpHeaders();
 
  
@@ -18,7 +18,7 @@ export class Tab1Page {
   }
   getCall() {
    let options = { headers: this.headers};
-   this.http.get(this.urlBase, options).toPromise().then( data => {
+   this.http.get(this.urlBase, options).subscribe(data => {
      console.log(data);
    });
    
