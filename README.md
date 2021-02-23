@@ -25,6 +25,17 @@ North star customer: Students (Elementary to post-secondary). This is because fo
 
 Carry over customers: Parents/Teachers: Everyone is responsible for recycling their own recyclable materials, parents or teachers can help their children form a good recycling habit while strengthening their own recycling habit.
 
+# What 
+The constraints for this project are:
+
+Scanning the recyclable symbol if the waste material is translucent thus the camera will not be able to detect it.
+
+Giving access to information without any cellular data and or internet connection.
+
+The inability to allow people who do not have access to a mobile device receive any information.
+
+The time to develop this application is around ~2 to 3 months.
+
 
 
 
