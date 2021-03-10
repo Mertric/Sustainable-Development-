@@ -6,6 +6,7 @@ import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { Tab1PageRoutingModule } from './tab1-routing.module';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
     HttpClientModule,
-
+    ReactiveFormsModule
   ],
   declarations: [Tab1Page]
 })

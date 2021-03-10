@@ -1,0 +1,1 @@
+const { DataStore } = require('notarealdb');

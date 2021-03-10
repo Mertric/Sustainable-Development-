@@ -1,6 +1,8 @@
 {
   "name": "RecycleMate",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular",
   "proxies": [
     {

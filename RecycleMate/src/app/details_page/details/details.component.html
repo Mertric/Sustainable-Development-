@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">{{title}}</ion-title>
+    <ion-buttons slot="start" (click)="goBack()">
+      <ion-icon name="arrow-back-sharp"></ion-icon>
+      Back
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="setDescription()">Description</ion-button>
+  <div [innerHTML]="strippedHTML"></div>
+  <ion-button (click)="setMap()">Locations</ion-button>
+  <ion-list class="mapsList" *ngFor="let location of locations">
+    <ion-item>
+      <ion-label> {{ location.address }} </ion-label>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
