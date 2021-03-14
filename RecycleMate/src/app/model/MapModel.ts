@@ -6,4 +6,5 @@ export class MapModel {
     page: number;
     address: string;
     phoneNumber: string;
+    haversine: number;
 }
