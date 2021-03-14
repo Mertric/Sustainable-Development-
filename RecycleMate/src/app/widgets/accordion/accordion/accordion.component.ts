@@ -6,7 +6,7 @@ import { MapModel } from 'src/app/model/MapModel';
   styleUrls: ['./accordion.component.scss'],
 })
 export class AccordionComponent implements OnInit {
-
+  baseURLMaps = 'https://www.google.com/maps?q=';
   /**
    * The name of the technology that will be displayed as the title for the accordion header
    * @public
@@ -14,7 +14,7 @@ export class AccordionComponent implements OnInit {
    * @type {string}
    */
    @Input()
-   name : string;
+   name: string;
 
    /**
    * The description of the technology that will be displayed within the accordion body (when activated
@@ -25,10 +25,10 @@ export class AccordionComponent implements OnInit {
    */
   @Input()
   //string if need to  change  back
-  description : string;
+  description: string;
 
   @Input()
-  listLocation : MapModel[];
+  mapLocations: MapModel[];
 
   /**
    * The change event that will be broadcast to the parent component when the user interacts with the component's
@@ -51,6 +51,10 @@ export class AccordionComponent implements OnInit {
 
   constructor() { }
 
+  ngOnChanges(){
+
+  }
+
   ngOnInit() {}
 
   /**
@@ -59,7 +63,7 @@ export class AccordionComponent implements OnInit {
    * @method toggleAccordion
    * @returns {none}
    */
-   public toggleAccordion() : void
+   public toggleAccordion(): void
    {
        this.isMenuOpen = !this.isMenuOpen;
    }
@@ -70,9 +74,16 @@ export class AccordionComponent implements OnInit {
    * @method broadcastName
    * @returns {none}
    */
-  public broadcastName(name : string) : void
+  public broadcastName(name: string): void
   {
      this.change.emit(name);
+  }
+  public getIfMapIsFilled(): string{
+    return this.mapLocations ? 'MAP' : 'DESCRIPTION'
+  }
+
+  public onSelect($mapLocation){
+    window.location.href = this.baseURLMaps + $mapLocation.y + ',' + $mapLocation.x;
   }
 
 }

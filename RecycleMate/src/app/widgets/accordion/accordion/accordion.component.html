@@ -3,18 +3,43 @@
   <span *ngIf="isMenuOpen">&#9650;</span>
   <span *ngIf="!isMenuOpen">&#9660;</span>
 </h2>
-<div [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
-  <section class="image-wrapper">
-    <img [src]="image" />
-  </section>
-  <p [innerHTML] = description ></p>
-  <!--
-   <ion-button
-      type="button"
-      color="primary"
-      fill="solid"
-      size="default"
+<ng-container
+  *ngIf="
+    getIfMapIsFilled() == 'MAP';
+    then mapTemplate;
+    else descriptionTemplate
+  "
+>
+</ng-container>
+<ng-template #descriptionTemplate>
+  <div [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+    <section class="image-wrapper"></section>
+    <p [innerHTML]="description"></p>
+  </div>
+</ng-template>
+<ng-template #mapTemplate>
+  <div class="listOfLocations" [ngClass]="this.isMenuOpen ? 'active' : 'inactive'">
+    <!-- 
+    <div class="locationsDiv"
+      *ngFor="let mapLocation of mapLocations"
+      (click)="onSelect(mapLocation)"
+      [innerHTML]="mapLocation.address"
+    >
+      <section class="image-wrapper"></section>
+      <ion-icon class="iconName" name="navigate-circle-outline"></ion-icon>
+    </div>
+    -->
+    <ion-list
+    class="mapsList"
+    *ngFor="let mapLocation of mapLocations"
+    (click)="onSelect(mapLocation)"
+  >
+    <ion-item>
+      <ion-label> {{ mapLocation.address }}</ion-label>
+      <ion-icon class="iconName" name="location"></ion-icon>
+    </ion-item>
+  </ion-list>
+  </div>
 
-      (click)="broadcastName(name)">Console log me!</ion-button>
-         -->
-</div>
+  
+</ng-template>

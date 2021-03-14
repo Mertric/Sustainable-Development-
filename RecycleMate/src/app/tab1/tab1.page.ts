@@ -147,7 +147,7 @@ export class Tab1Page {
   private suggestionURICreate(suggestion: string): string {
     return this.urlSearchSuggestionBase + suggestion;
   }
-  private onSelect(suggestion: SuggestionModel): void {
+   onSelect(suggestion: SuggestionModel): void {
     this.selectedMaterial = suggestion;
     console.log(this.selectedMaterial.materialID);
     console.log(

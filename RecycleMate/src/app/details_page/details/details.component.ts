@@ -69,7 +69,8 @@ export class DetailsComponent implements OnInit {
   }
 
   setMap(): void {
-    this.sharedService.getMap(this.materialID).subscribe((x) => {
+    this.sharedService.getMap(this.materialID).subscribe((x: any[]) => {
+      console.log('herhe', x);
       x.forEach((element) => {
         element.haversine = this.haversien(
           this.userLongitude,
@@ -137,5 +138,4 @@ export class DetailsComponent implements OnInit {
     let c = 2 * Math.asin(Math.sqrt(a));
     return c * radius;
   }
-
 }

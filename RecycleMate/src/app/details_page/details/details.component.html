@@ -35,8 +35,9 @@
 
   </app-accordion>
     -->
-  <h2>Locations </h2>
-    <ion-list
+  <app-accordion name="Maps" [mapLocations]=locations>
+  </app-accordion>
+    <!-- <ion-list
     class="mapsList"
     *ngFor="let location of locations"
     (click)="onSelect(location)"
@@ -45,7 +46,7 @@
       <ion-label> {{ location.address }}</ion-label>
       <ion-icon name="navigate-sharp"></ion-icon>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
  
 </ion-content>
