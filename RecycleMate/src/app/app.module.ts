@@ -12,6 +12,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 import {AccordionComponent} from '../app/widgets/accordion/accordion/accordion.component';
 
 
+
 @NgModule({
   declarations: [AppComponent, DetailsComponent, AccordionComponent],
   entryComponents: [],

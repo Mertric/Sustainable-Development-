@@ -24,3 +24,23 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+ion-tab-button {
+    --ripple-color: var(--ion-color-medium);
+    --color: var(--ion-color-dark);
+    --color-selected: var(--ion-color-medium);
+  }
+  
+ion-tab-button.tab-selected {
+    --background: var(--ion-color-dark) !important;
+    --color-selected: var(--ion-color-light);
+  }
+
+
+ion-searchbar {
+    .searchbar-input-container {
+        input{
+            font-size: 25px !important;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Search Waste Material </ion-title>
+    <ion-title class="ion-text-center" id="page_title"> Search Waste Material </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -11,12 +11,13 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-searchbar
+  <ion-searchbar 
     placeholder="Search Waste Material"
     type="Search"
     (ionChange)="onInput($event)"
     [(ngModel)]="userInput"
     debounce="1800"
+    class="search_bar"
   >
   </ion-searchbar>
 

@@ -12,7 +12,7 @@ import { descriptionAssembler } from '../assembler/description-assembler';
   providedIn: 'root',
 })
 export class WasteWizardAPIService {
-  urlBase = 'api/recollect/Regina/services/waste/pages/en/';
+  urlBase = '/api';
   headers = new HttpHeaders();
   DEPOT_LIST: string = 'depot_list';
 
@@ -28,18 +28,20 @@ export class WasteWizardAPIService {
     this.headers.append('content-type', 'application/json');
   }
 
-  getMap(mid: string): Observable<MapModel[]> {
+  getMap(materialId: string): Observable<MapModel[]> {
     let options = { headers: this.headers };
+    console.log('hihi', `${this.urlBase}/location?materialId=${materialId}`)
     return this.http
-      .get(this.urlBase + mid + '.json', options)
+      .get(`${this.urlBase}/location?materialId=${materialId}`, options)
       .pipe(map((data) => mapAssembler(data)));
   }
 
-  getDescription(mid: string): Observable<DescriptionModel[]> {
+  getDescription(materialId: string): Observable<DescriptionModel> {
     let options = { headers: this.headers };
+
     return this.http
-      .get(this.urlBase + mid + '.json', options)
-      .pipe(map((data) => descriptionAssembler(data)));
+      .get(`${this.urlBase}/detail?materialId=${materialId}`, options)
+     .pipe(map((data) => descriptionAssembler(data)));
   }
 
 

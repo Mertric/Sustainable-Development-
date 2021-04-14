@@ -1,16 +1,28 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Scan Recyclable Symbol
+    <ion-title size="large" class="ion-text-center" id="page_title">
+      Recyclable Symbols
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Scan Symbol</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
+<ion-content [fullscreen]="true" class="recycleContent">
+  <!-- <button (click)="scroll(6)">Jump To</button> -->
+  <div class="listOfSymbols">
+    <div *ngFor="let symbolImage of arrayOfImages; index as i" style="size: '128px'" class="content_wrapper">
+      <img [src]="symbolImage.imgPath" class="image"/>
+      <br>
+      <ion-label class="title">{{symbolImage.title}} </ion-label>
+      <div id="symbolImage-{{i}}">
+        <ion-label>Description</ion-label>
+        <p>{{symbolImage.description}}</p>
+        <ion-label>Found In</ion-label>
+        <p>{{symbolImage.foundIn}}</p>
+        <ion-label>Instructions To Recycle</ion-label>
+        <p>{{symbolImage.instructions}}</p>
+        <ion-label>Recycled Into</ion-label>
+        <p>{{symbolImage.reprocessedProducts}}</p>
+      </div>
+    </div>
+  </div>
 </ion-content>

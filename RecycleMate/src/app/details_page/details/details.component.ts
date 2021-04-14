@@ -1,3 +1,4 @@
+import { MapModel } from './../../model/MapModel';
 import {
   HttpClientModule,
   HttpHeaders,
@@ -5,7 +6,7 @@ import {
 } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, UrlSerializer } from '@angular/router';
-import { MapModel } from 'src/app/model/MapModel';
+//import { MapModel } from 'src/app/model/MapModel';
 import { Tab1Page } from 'src/app/tab1/tab1.page';
 import { WasteWizardAPIService } from 'src/app/services/waste-wizard-api.service';
 import { descriptionAssembler } from 'src/app/assembler/description-assembler';
@@ -28,7 +29,6 @@ export class DetailsComponent implements OnInit {
     private geolocation: Geolocation
   ) {
     this.activatedRoute.params.subscribe((params) => {
-      // console.log(this.tab1call.getCall(params.id));
       this.materialID = params.id;
       console.log('this ' + this.materialID);
     });
@@ -40,25 +40,23 @@ export class DetailsComponent implements OnInit {
     this.headers.append('Accept', 'application/json');
     this.headers.append('content-type', 'application/json');
   }
-  urlBase = 'api/recollect/Regina/services/waste/pages/en/';
+
   headers = new HttpHeaders();
   materialID?: string;
   locations?: MapModel[];
-  descriptions?: DescriptionModel[];
+  descriptions?: DescriptionModel;
   strippedHTML?: string;
   title?: String;
   baseURLMaps = 'https://www.google.com/maps?q=';
   private userLongitude: any;
   private userLatitude: any;
-  public isMenuOpen : boolean = false;
-  
+  public isMenuOpen: boolean = false;
 
-  
   ngOnInit() {
     //refactor later maybe
     let options = { headers: this.headers };
     this.http
-      .get(this.urlBase + this.materialID + '.json', options)
+      .get(`/api/detail?materialId=${this.materialID}`, options)
       .subscribe((data) => {
         let obj = JSON.parse(JSON.stringify(data));
         this.title = obj.caption;
@@ -69,53 +67,41 @@ export class DetailsComponent implements OnInit {
   }
 
   setMap(): void {
-    this.sharedService.getMap(this.materialID).subscribe((x: any[]) => {
-      console.log('herhe', x);
-      x.forEach((element) => {
+    this.sharedService.getMap(this.materialID).subscribe((x: MapModel[]) => {
+      this.locations = x.map((element) => {
         element.haversine = this.haversien(
           this.userLongitude,
           this.userLatitude,
           Number(element.x),
           Number(element.y)
         );
-        console.log(element.haversine);
-      });
-      //sorting function of locations
-      console.log(x.sort((n1, n2) => n1.haversine - n2.haversine));
-      this.locations = x;
+        return element;
+      }).sort((a,b) => a.haversine - b.haversine);
     });
   }
+  
   setDescription(): void {
-    this.sharedService.getDescription(this.materialID).subscribe((data) => {
-      this.descriptions = data;
-      data.forEach((element) => {
-        this.strippedHTML = element.description;
+    this.sharedService
+      .getDescription(this.materialID)
+      .subscribe((data: DescriptionModel) => {
+        this.descriptions = data;
+        this.strippedHTML = data.description;
+        this.title = data.label;
       });
-      console.log(data);
-    });
   }
 
   goBack() {
     this.router.navigate(['/tabs/tab1'], { replaceUrl: true });
   }
 
-  
   private getUserCurrentLocation(): void {
     this.geolocation.getCurrentPosition().then((resp) => {
       this.userLongitude = resp.coords.longitude;
       this.userLatitude = resp.coords.latitude;
-      console.log(
-        'Longitude: ',
-        this.userLongitude,
-        ' + Latitude: ',
-        this.userLatitude
-      );
     });
   }
 
-  
   onSelect($location) {
-    // console.log("go to", this.baseURLMaps + $location.y +","+$location.x);
     window.location.href = this.baseURLMaps + $location.y + ',' + $location.x;
   }
 

@@ -1,0 +1,60 @@
+{
+  "RecyclableDescriptions": [
+    {
+      "title": "Polyethylene Terephthalate (PET or PETE)",
+      "description": "A clear hard plastic often used as single-use food and drink containers such as water & pop bottles, vegetable oil containers, peanut butter containers, and some prepared frozen food containers..",
+      "foundIn": "Soft drinks, water, ketchup, and beer bottles; mouthwash bottles; peanut butter containers; salad dressing and vegetable oil containers.",
+      "instructions": "PET or PETE can be picked up through most curbside recycling as long as its emptied and rinsed. Dispose bottle caps via trash.",
+      "reprocessedProducts": "PET or PETE can be recycled into: Polar fleece, fiber, tote bags, furniture, carpet, paneling, straps, bottles and food containers.",
+      "imgPath": "assets\\symbol1.png"
+    },
+    {
+      "title": "High density polyethylene (PE-HD)",
+      "description": "Versatile plastic with many uses, especially when it comes to packaging. It carries low risk of leaching and is readily recyclable into many types of goods.",
+      "foundIn": "Milk jugs; juice bottles; bleach, detergent, and other household cleaner bottles; shampoo bottles; some trash and shopping bags; motor oil bottles; butter and yogurt tubs; cereal box liners.",
+      "instructions": "HDPE can be picked up through most curbside recycling programs. Flimsy plastics (like grocery bags and plastic wrap) usually can't be recycled.",
+      "reprocessedProducts": "HDPE can be recycled into: Laundry detergent bottles, oil bottles, pens, recycling containers, floor tile, drainage pipe, lumber, benches, doghouses, picnic tables, fencing, shampoo bottles.",
+      "imgPath": "assets\\symbol2.png"
+    },
+    {
+      "title": "Polyvinyl chloride and Vinyl (PVC and V)",
+      "description": "PVC (polyvinyl chloride) and V (vinyl) is tough and weathers well, so it's commonly used for things like piping and siding. PVC is also cheap, so it's found in plenty of products and packaging. Because chlorine is part of PVC, it can result in the release of highly dangerous dioxins during manufacturing. Remember to never burn PVC, because it releases toxins.",
+      "foundIn": " Shampoo and cooking oil bottles, blister packaging, wire jacketing, siding, windows, piping.",
+      "instructions": "This type of material is not usually accepted by many recycling facilities. Contact your municipality for information of how to dispose of PVC and V correctly.",
+      "reprocessedProducts": "PVC and V can be recycled into: Decks, paneling, mud-flaps, roadway gutters, flooring, cables, speed bumps, mats.",
+      "imgPath": "assets\\symbol3.png"
+    },
+    {
+      "title": "Low density polyehtylene (PE-LD)",
+      "description": "LDPE (low density polyethylene) is a flexible plastic with many applications. Historically, it hasn't been accepted through most American recycling programs, but more and more communities are starting to accept it.",
+      "foundIn": "Squeezable bottles; bread, frozen food, dry cleaning, and shopping bags; tote bags; furniture.",
+      "instructions": "Usually not accepted in curbside pickups. Anything with LDPE cna be thrown in the trash. Plastic shopping bags cannot be recycled or reused for household use.",
+      "reprocessedProducts": "LDPE can be recycled into: Trash can liners and cans, compost bins, shipping envelopes, paneling, lumber, landscaping ties, floor tile.",
+      "imgPath": "assets\\symbol4.png"
+    },
+    {
+      "title": "Polypropylene (PP)",
+      "description": "PP has a high melting point, thus it is often chosen for containers that will hold hot liquids",
+      "foundIn": "Some yogurt containers, syrup and medicine bottles, caps, straws.",
+      "instructions": "Polypropylene can be recycled through curbside programs. Make sure that there is no contents left inside the item. Bottle caps can be thrown into the trash",
+      "reprocessedProducts": "PP can be recycled into: Signal lights, battery cables, brooms, brushes, auto battery cases, ice scrapers, landscape borders, bicycle racks, rakes, bins, pallets, trays",
+      "imgPath": "assets\\symbol5.png"
+    },
+    {
+      "title": "Polystyrene (PS)",
+      "description": "Polystyrene can be made into rigid or foam products. Trademark for Styrofoam. Styrene monomer can leach into foods and is a possible human carcinogen.",
+      "foundIn": "Disposable plates and cups, meat trays, egg cartons, carry-out containers, aspirin bottles, compact disc cases.",
+      "instructions": "Not recyclable. Polystyrene items should be placed in a bag, squeeze out the air and tie it up before putting it in the trash to prevent pellets from dispersing.",
+      "reprocessedProducts": "PS can be recycled into: Insulation, light switch plates, egg cartons, vents, rulers, foam packing, carry-out containers.",
+      "imgPath": "assets\\symbol6.png"
+    },
+    {
+      "title": "Miscellaneous or Other ",
+      "description": "Items that have the recyclable symbol 7 are a combination of materials from recyclable symbols 1 through 6.",
+      "foundIn": "Three- and five-gallon water bottles, bullet-proof materials, sunglasses, DVDs,computer cases, signs and displays, certain food containers, nylon.",
+      "instructions": "Not recyclable. The best option is the consult your municipality's website for specific instructions.",
+      "reprocessedProducts": "Miscellaneous can be recycled into: Plastic lumber and custom-made products.",
+      "imgPath": "assets\\symbol7.png"
+    }
+  ]
+}

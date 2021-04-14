@@ -1,0 +1,50 @@
+#page_title{
+    font-size: 30px;
+}
+.descriptionContent{
+    color:black;
+}
+
+h3{
+    color:black;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.wrapper_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f8f8ff;
+    padding: 15px;
+}
+
+.content_wrapper{
+    padding-left: 50px;
+}
+.content_wrapper > h3{
+    text-align: center;
+}
+
+.descriptionContent{
+    font-size: 20px;
+}
+
+.logo{
+    width: 250px;
+    height: 250;
+
+}
+
+.accordionaccordion_wrapperThing{
+    padding:20px;
+}
+
+.not_Recyclable_wrapper{
+    padding-top: 20px;
+}
+
+
+

@@ -8,8 +8,9 @@ import { title } from 'process';
 import { SuggestionModel } from '../model/suggestionModel';
 import { Router } from '@angular/router';
 import { element } from 'protractor';
-import {Observable, Subject} from 'rxjs'; 
+import { Observable, Subject } from 'rxjs';
 import { MaterialListModel } from '../model/materialListModel';
+
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -18,13 +19,13 @@ import { MaterialListModel } from '../model/materialListModel';
 export class Tab1Page {
   urlBase = 'api/recollect/Regina/services/waste/pages/en/';
   //anotherURLBase ='api/recollect/Regina/services/waste/pages/en/' + this.itemURICreate();
-  urlListMaterial =
-    'api/recollect/Regina/services/waste/pages/en/wizard_material_list.json';
-  urlSearchSuggestionBase =
-    'api/recollect/Regina/services/waste/pages?type=material&suggest=';
-  headers = new HttpHeaders();
+  urlListMaterial = '/api/material?id=';
+  urlSearchSuggestionBase = '/api/search?suggest=';
   DEPOT_LIST: string = 'depot_list';
   DESCRIPTION: string = 'description';
+
+
+  headers = new HttpHeaders();
   userInput = '';
   suggestions: SuggestionModel[];
   suggestionsID = '';
@@ -66,7 +67,7 @@ export class Tab1Page {
     let options = { headers: this.headers };
     let result: MapModel[];
     let fileEnding = '.json';
-    let concatURL = this.urlBase.concat(mid.toString(),fileEnding.toString());
+    let concatURL = this.urlBase.concat(mid.toString(), fileEnding.toString());
     this.http.get(concatURL, options).subscribe((data) => {
       let obj = JSON.parse(JSON.stringify(data));
       obj['sections'].foreach((element) => {
@@ -117,15 +118,38 @@ export class Tab1Page {
     return result;
   }
 
-
   listMaterial() {
     let options = { headers: this.headers };
     let result: MaterialListModel[];
-    let listOfTitles = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','R','S','T','U','V','W','Y']
+    let listOfTitles = [
+      'A',
+      'B',
+      'C',
+      'D',
+      'E',
+      'F',
+      'G',
+      'H',
+      'I',
+      'J',
+      'K',
+      'L',
+      'M',
+      'N',
+      'O',
+      'P',
+      'R',
+      'S',
+      'T',
+      'U',
+      'V',
+      'W',
+      'Y',
+    ];
     this.http.get(this.urlListMaterial, options).subscribe((data) => {
       let obj = JSON.parse(JSON.stringify(data));
-      obj['sections'].forEach(element => {
-        if (listOfTitles.includes(element.title)){
+      obj['sections'].forEach((element) => {
+        if (listOfTitles.includes(element.title)) {
           let temp: MaterialListModel[] = element.rows
             .map((e) => {
               if (e?.type == 'url') {
@@ -147,7 +171,8 @@ export class Tab1Page {
   private suggestionURICreate(suggestion: string): string {
     return this.urlSearchSuggestionBase + suggestion;
   }
-   onSelect(suggestion: SuggestionModel): void {
+
+  onSelect(suggestion: SuggestionModel): void {
     this.selectedMaterial = suggestion;
     console.log(this.selectedMaterial.materialID);
     console.log(

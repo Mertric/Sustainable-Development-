@@ -1,17 +1,50 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center" id="page_title">
       General Information
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Information</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<div class="wrapper_header">
+  <img src="\assets\\sdg_Logo.png" class="logo">
+  <div class="content_wrapper">
+    <h3> United Nations Sustainable Development Goal: Responsible Consumption and Production </h3>
+    <p class="descriptionContent"> Recycle Smart supports the United Nations Sustainable Goal 12. The following sub goals 12.5 and 12.8 of Goal 12 Responsible Consumption and Production. </p>
+    <ul>
+      <li class="descriptionContent">12.5 By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse.</li>
+      <li class="descriptionContent">12.8 By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature.</li>
+    </ul>
+  </div>
+</div>
+
+
+<div  class="accordion_wrapper"> 
+  <h3>Materials Accepted in Recycling Bins</h3>
+  <app-other-accordion
+  *ngFor="let technology of technologies" 
+  image="{{technology.image}}" 
+  name="{{ technology.name }}" 
+  description="{{ technology.description }}" 
+  (change)="captureName($event)">
+  </app-other-accordion>
+</div>
+
+<div class="not_Recyclable_wrapper"> 
+  <h3>Materials Not Accepted in Recycling Bins</h3>
+  <app-other-accordion
+  *ngFor="let noRecyclables of nonRecyclables" 
+  image=" {{noRecyclables.image}} " 
+  name="{{ noRecyclables.name }}" 
+  description="{{ noRecyclables.description }}" 
+  (change)="captureName($event)">
+  </app-other-accordion>
+</div>
+
+  
 
   
 </ion-content>
