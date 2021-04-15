@@ -26,9 +26,10 @@ Targeting the sub goals:
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Business need/opportunity">Usage</a></li>
-    <li><a href="#Reason">Roadmap</a></li>
-    <li><a href="#Impact">Contributing</a></li>
+    <li><a href="#Business need/opportunity">Business need/opportunity</a></li>
+    <li><a href="#Reason">Reason </a></li>
+    <li><a href="#Impact">Impact</a></li>
+    <li><a href="#Who (Community)">Who</a></li>
     <li><a href="#What">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
