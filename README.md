@@ -114,10 +114,27 @@ To get a local copy up and running follow these simple steps.
 
 ## Usage
 <p> This proof concept application allows the user to search recycable/waste material, learn about where and how to dispose of the material locally in Regina, Saskatchewan, information on recyclable symbols and common recyclables.</p>
-<img src="images/mvp search.PNG" width=270 height=auto/> <img src="images/details mvp.PNG" width=270 height=auto/>
-<img src="images/symbols mvp.PNG" width=270 height=auto/> <img src="images/general infro page.PNG" width=270 height=auto/> 
-
-
+<table>
+  <tr>
+    <td>Search Page</td>
+     <td>Description Page</td>
+  </tr>
+  <tr>
+    <td><img src="images/mvp search.PNG" width=270 height=480></td>
+    <td><img src="images/details mvp.PNG" width=270 height=480></td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Symbols Page</td>
+     <td>General Information Page</td>
+  </tr>
+  <tr>
+    <td><img src="images/symbols mvp.PNG" width=270 height=480></td>
+    <td><img src="images/general infro page.PNG" width=270 height=480></td>
+  </tr>
+ </table>
 
 ## License
 <p> Creative Commons Share & Share Alike (CC BY-SA 4.0) </p>
