@@ -1,14 +1,63 @@
+
 # Sustainable-Development
 ENSE 405 Project. Creating a application for one of the United Nations 17 Goals of Sustainable Development.
-# Project Idea
-This application will enforce and  strengthen our current understanding of the sustainability goal that the United Nations have provided. 
 
+This is a proof of concept application that will establish and strengthen our current understanding of the sustainability goal that the United Nations have provided. 
 Targeting the sub goals: 
 
 12.5: By 2030, substantially reduce waste generation through prevention, reduction, recycling and reuse
 
 12.8: By 2030, ensure that people everywhere have the relevant information and awareness for sustainable development and lifestyles in harmony with nature
 
+
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#Business need/opportunity">Usage</a></li>
+    <li><a href="#Reason">Roadmap</a></li>
+    <li><a href="#Impact">Contributing</a></li>
+    <li><a href="#What">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Business need/opportunity
 This application will have the interactive ability to allow the user to scan recyclable symbols(0 to 7) to obtain information of the waste material. As well as determining locally where they will be able to dispose the waste materials by using the waste wizard API.  This tool will hopefully help inform people about sustainability and how the affects of proper waste disposal in the long term benefit our world by reducing our carbon footprint.
 # Reason 
 As humans it is only natural to sustain life on earth as much as possible, though in many cases we have not taken account for responsible consumption. Many people are unaware that the products they consume in their life can be disposed of through recycling but this activity is often neglected. This causes harm to our environment causing pollutants to rise in the water and onto land which further disrupts other habitats in our world. 
@@ -23,7 +72,7 @@ My target audience are the citizens of countries that have trouble with properly
 
 North star customer: Students (Elementary to post-secondary). This is because forming a good recycling habit will help in the long term of disposing waste material correctly.
 
-Carry over customers: Parents/Teachers: Everyone is responsible for recycling their own recyclable materials, parents or teachers can help their children form a good recycling habit while strengthening their own recycling habit.
+Carry over customers: Parents/Teachers: Everyone is responsible for recycling their own recyclable materials, parents or teachers can help their children/students form a good recycling habit while strengthening their own recycling habit.
 
 # What 
 The constraints for this project are:
@@ -35,8 +84,6 @@ Giving access to information without any cellular data and or internet connectio
 The inability to allow people who do not have access to a mobile device receive any information.
 
 The time to develop this application is around ~2 to 3 months.
-
-
 
 
 # License
