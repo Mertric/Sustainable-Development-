@@ -49,7 +49,27 @@ Targeting the sub goals:
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+### Impact
+The application I am developing will not change our current reality but only enforce and strengthen our current understanding of the idea of sustainability in terms of properly disposing waste material. This application will target every citizen in the country who have access to a mobile device as it will provide them with information and a tool to help properly dispose of their waste material locally.
+
+### Who (Community)
+My target audience are the citizens of countries that have trouble with properly disposing waste. The opinions of everyone matters because recycling is a worldwide effort. I want my work to reach the young community as they can become educated about proper waste disposal since many of them may have access to mobile devices. With the information outputted through the mobile phones the users will have access to readily available information. With the constraints of mobile data and or WIFI access.
+
+North star customer: Students (Elementary to post-secondary). This is because forming a good recycling habit will help in the long term of disposing waste material correctly.
+
+Carry over customers: Parents/Teachers: Everyone is responsible for recycling their own recyclable materials, parents or teachers can help their children/students form a good recycling habit while strengthening their own recycling habit.
+
+### What 
+The constraints for this project are:
+
+Scanning the recyclable symbol if the waste material is translucent thus the camera will not be able to detect it.
+
+Giving access to information without any cellular data and or internet connection.
+
+The inability to allow people who do not have access to a mobile device receive any information.
+
+The time to develop this application is around ~2 to 3 months.
+
 
 ### Built With
 * [Ionic Framework SDK](https://ionicframework.com/)
@@ -105,5 +125,9 @@ To get a local copy up and running follow these simple steps.
 <p> This proof concept application allows the user to search recycable/waste material, learn about where and how to dispose of the material locally in Regina, Saskatchewan, information on recyclable symbols and common recyclables.</p>
 <img src="images/mvp search.PNG" width=270 height=auto/> <img src="images/details mvp.PNG" width=270 height=auto/>
 <img src="images/symbols mvp.PNG" width=270 height=auto/> <img src="images/general infro page.PNG" width=270 height=auto/> 
+
+
+## License
+<p> Creative Commons Share & Share Alike (CC BY-SA 4.0) </p>
 
 
