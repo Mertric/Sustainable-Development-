@@ -32,19 +32,10 @@ Targeting the sub goals:
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
-
-
-
-
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -127,7 +118,14 @@ To get a local copy up and running follow these simple steps.
 <img src="images/symbols mvp.PNG" width=270 height=auto/> <img src="images/general infro page.PNG" width=270 height=auto/> 
 
 
+
 ## License
 <p> Creative Commons Share & Share Alike (CC BY-SA 4.0) </p>
+
+## Acknowledgements
+* [University of Regina](https://www.uregina.ca/engineering/programs/software/index.html)
+* [Waste Wizard](https://recollect.net/waste-wizard/)
+* [Symbols Info Content](https://www.wm.com/ca/en/recycle-right/recycling-101)
+* [General Info Content](https://www.wm.com/ca/en/recycle-right/recycling-101)
 
 
