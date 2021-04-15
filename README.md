@@ -1,4 +1,5 @@
 <p align="center">
+  <img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/Untitled-1.png" alt="Logo" width="150" height="150">
   <h3 align="center">Recycle Smart</h3>
   <p align="center">
   
