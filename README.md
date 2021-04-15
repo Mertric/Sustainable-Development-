@@ -26,7 +26,7 @@ Targeting the sub goals:
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#Business need/opportunity">Business need/opportunity</a></li>
+    <li><a href="##business">Business need/opportunity</a></li>
     <li><a href="#Reason">Reason </a></li>
     <li><a href="#Impact">Impact</a></li>
     <li><a href="#Who (Community)">Who</a></li>
@@ -57,7 +57,7 @@ Targeting the sub goals:
 
 
 
-
+##business
 # Business need/opportunity
 This application will have the interactive ability to allow the user to scan recyclable symbols(0 to 7) to obtain information of the waste material. As well as determining locally where they will be able to dispose the waste materials by using the waste wizard API.  This tool will hopefully help inform people about sustainability and how the affects of proper waste disposal in the long term benefit our world by reducing our carbon footprint.
 # Reason 
