@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/Untitled-1.png" alt="Logo" width="150" height="150">
+  <img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/Untitled-1.png" alt="Logo" width="250" height="250">
   <h3 align="center">Recycle Smart</h3>
   <p align="center">
   
@@ -103,5 +103,9 @@ To get a local copy up and running follow these simple steps.
 
 ## Usage
 <p> This proof concept application allows the user to search recycable/waste material, learn about where and how to dispose of the material locally in Regina, Saskatchewan, Canada, information on recyclable symbols and common recyclables.</p>
+<img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/mvp%20search.PNG" alt="Search" width="250" height="auto">
+<img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/details%20mvp.PNG" alt="desc" width="250" height="auto">
+<img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/symbols%20mvp.PNG" alt="symbol" width="250" height="auto">
+<img src="https://github.com/Mertric/Sustainable-Development-/blob/main/images/general%20infro%20page.PNG" alt="gen" width="250" height="auto">
 
 
