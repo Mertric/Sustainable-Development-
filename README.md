@@ -102,7 +102,8 @@ To get a local copy up and running follow these simple steps.
    ```sh
    ionic serve
    ```
-7. Start up backend services
+7. Open two new command lines and change directory to src/node/src
+8. Start up backend services
    ```sh
    npm run start-w
    ```
