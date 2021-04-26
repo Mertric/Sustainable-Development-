@@ -121,8 +121,8 @@ To get a local copy up and running follow these simple steps.
      <td>Description Page</td>
   </tr>
   <tr>
-    <td><img src="images/mvp search.PNG" width=270 height=500></td>
-    <td><img src="images/details mvp.PNG" width=270 height=500></td>
+    <td><img src="Documents/images/mvp search.PNG" width=270 height=500></td>
+    <td><img src="Documents/images/details mvp.PNG" width=270 height=500></td>
   </tr>
  </table>
  
@@ -132,8 +132,8 @@ To get a local copy up and running follow these simple steps.
      <td>General Information Page</td>
   </tr>
   <tr>
-    <td><img src="images/symbols mvp.PNG" width=270 height=500></td>
-    <td><img src="images/general infro page.PNG" width=270 height=500></td>
+    <td><img src="Documents/images/symbols mvp.PNG" width=270 height=500></td>
+    <td><img src="Documents/images/general infro page.PNG" width=270 height=500></td>
   </tr>
  </table>
 
